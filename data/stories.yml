@@ -1,0 +1,69 @@
+version: "2.0"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_specialty
+    entities:
+    - specialty: "Cardiology"
+  - action: utter_ask_date
+  - intent: inform_date
+    entities:
+    - date: "12/06/2023"
+  - action: utter_ask_time
+  - intent: inform_time
+    entities:
+    - time: "10:00 AM"
+  - action: utter_ask_appointment_details
+  - intent: inform_appointment_details
+    entities:
+    - appointment_details: "Follow-up on previous consultation"
+  - action: utter_confirm_appointment
+  - intent: affirm
+  - action: action_book_appointment
+  - action: utter_appointment_booked
+  - action: utter_ask_for_more
+
+- story: ask for symptoms
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_symptoms_cough_and_fever
+  - action: action_search_symptoms
+  - action: utter_ask_for_more
+
+- story: ask for preventions
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_preventions_migraine
+  - action: action_search_preventions
+  - action: utter_ask_for_more
+
+- story: ask for medication
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_medication_diabetes
+  - action: action_search_medication
+  - action: utter_ask_for_more
+
+- story: ask for doctors
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_doctors_asthma
+  - action: action_search_doctors
+  - action: utter_ask_for_more
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: handle fallback
+  steps:
+  - intent: fallback
+  - action: utter_default

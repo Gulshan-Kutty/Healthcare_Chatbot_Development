@@ -1,0 +1,131 @@
+version: "2.0"
+
+intents:
+- greet
+- goodbye
+- thanks
+- affirm
+- deny
+- inform_specialty
+- inform_date
+- inform_time
+- inform_appointment_details
+- ask_symptoms_cough_and_fever
+- ask_preventions_cough_and_fever
+- ask_medication_cough_and_fever
+- ask_doctors_cough_and_fever
+- ask_symptoms_migraine
+- ask_preventions_migraine
+- ask_medication_migraine
+- ask_doctors_migraine
+- ask_symptoms_diabetes
+- ask_preventions_diabetes
+- ask_medication_diabetes
+- ask_doctors_diabetes
+- ask_symptoms_asthma
+- ask_preventions_asthma
+- ask_medication_asthma
+- ask_doctors_asthma
+- ask_symptoms_depression
+- ask_preventions_depression
+- ask_medication_depression
+- ask_doctors_depression
+- ask_symptoms_hypertension
+- ask_preventions_hypertension
+- ask_medication_hypertension
+- ask_doctors_hypertension
+- ask_symptoms_arthritis
+- ask_preventions_arthritis
+- ask_medication_arthritis
+- ask_doctors_arthritis
+- ask_symptoms_allergies
+- ask_preventions_allergies
+- ask_medication_allergies
+- ask_doctors_allergies
+- ask_symptoms_cancer
+- ask_preventions_cancer
+- ask_medication_cancer
+- ask_doctors_cancer
+- ask_symptoms_malaria
+- ask_preventions_malaria
+- ask_medication_malaria
+- ask_doctors_malaria
+- ask_symptoms_pneumonia
+- ask_preventions_pneumonia
+- ask_medication_pneumonia
+- ask_doctors_pneumonia
+- ask_symptoms_common_cold
+- ask_preventions_common_cold
+- ask_medication_common_cold
+- ask_doctors_common_cold
+- ask_symptoms_kidney_stones
+- ask_preventions_kidney_stones
+- ask_medication_kidney_stones
+- ask_doctors_kidney_stones
+- book_appointment
+
+slots:
+  specialty:
+    type: text
+    mappings:
+    - intent: inform_specialty
+  date:
+    type: text
+    mappings:
+    - intent: inform_date
+  time:
+    type: text
+    mappings:
+    - intent: inform_time
+  appointment_details:
+    type: text
+    mappings:
+    - intent: inform_appointment_details
+
+entities:
+- specialty
+- date
+- time
+- appointment_details
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day!"
+
+  utter_thanks:
+  - text: "You're welcome! If you have any more questions, feel free to ask."
+
+  utter_ask_specialty:
+  - text: "Sure, I can help you with that. Please provide me the specialty you are looking for, such as Cardiology, Dermatology, etc."
+
+  utter_ask_date:
+  - text: "Great! Now, please provide me the desired date for the appointment in the format dd/mm/yyyy."
+
+  utter_ask_time:
+  - text: "Thank you! Lastly, please provide me the desired time for the appointment."
+
+  utter_ask_appointment_details:
+  - text: "Alright! Could you please provide me any specific details or requirements for the appointment?"
+
+  utter_confirm_appointment:
+  - text: "Just to confirm, you want to book an appointment for {specialty} on {date} at {time} with the following details: {appointment_details}. Is that correct?"
+
+  utter_appointment_booked:
+  - text: "Your appointment has been successfully booked. You will receive a confirmation message shortly."
+
+  utter_ask_for_more:
+  - text: "Is there anything else I can assist you with?"
+
+  utter_default:
+  - text: "I'm sorry, I didn't understand. Can you please rephrase your request?"
+
+actions:
+- action_confirm_appointment
+- action_book_appointment
+- action_search_doctors
+- action_search_symptoms
+- action_search_preventions
+- action_search_medication

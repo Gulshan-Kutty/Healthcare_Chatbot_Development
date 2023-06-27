@@ -1,0 +1,195 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks a lot
+    - thanks so much
+
+- intent: ask_symptoms_allergies
+  examples: |
+    - What are the symptoms of allergies?
+    - How do I know if I have allergies?
+    - What are the common symptoms of allergies?
+
+- intent: ask_preventions_allergies
+  examples: |
+    - How can I prevent allergies?
+    - What are the ways to avoid allergies?
+    - What precautions should I take to prevent allergies?
+
+- intent: ask_medication_allergies
+  examples: |
+    - What medications are used to treat allergies?
+    - Are there any specific medicines for allergies?
+    - How can I relieve allergy symptoms?
+
+- intent: ask_doctors_allergies
+  examples: |
+    - Which type of doctor treats allergies?
+    - Can you recommend a specialist for allergies?
+    - I need to see a doctor for my allergies.
+
+- intent: ask_symptoms_cancer
+  examples: |
+    - What are the symptoms of cancer?
+    - How can I identify if I have cancer?
+    - What are the common signs of cancer?
+
+- intent: ask_preventions_cancer
+  examples: |
+    - How can I prevent cancer?
+    - Are there any ways to lower the risk of cancer?
+    - What are the preventive measures for cancer?
+
+- intent: ask_medication_cancer
+  examples: |
+    - What are the treatment options for cancer?
+    - How is cancer treated?
+    - Are there any specific medications for cancer?
+
+- intent: ask_doctors_cancer
+  examples: |
+    - Which type of doctor treats cancer?
+    - Can you recommend an oncologist?
+    - I need to consult with a cancer specialist.
+
+- intent: ask_symptoms_malaria
+  examples: |
+    - What are the symptoms of malaria?
+    - How do I know if I have malaria?
+    - What are the common signs of malaria?
+
+- intent: ask_preventions_malaria
+  examples: |
+    - How can I prevent malaria?
+    - What are the ways to avoid malaria?
+    - Are there any preventive measures for malaria?
+
+- intent: ask_medication_malaria
+  examples: |
+    - What medications are used to treat malaria?
+    - How is malaria treated?
+    - Are there any specific medicines for malaria?
+
+- intent: ask_doctors_malaria
+  examples: |
+    - Which type of doctor treats malaria?
+    - Can you recommend a doctor for malaria treatment?
+    - I need to see a specialist for malaria.
+
+- intent: ask_symptoms_pneumonia
+  examples: |
+    - What are the symptoms of pneumonia?
+    - How do I know if I have pneumonia?
+    - What are the common signs of pneumonia?
+
+- intent: ask_preventions_pneumonia
+  examples: |
+    - How can I prevent pneumonia?
+    - What are the ways to avoid pneumonia?
+    - Are there any preventive measures for pneumonia?
+
+- intent: ask_medication_pneumonia
+  examples: |
+    - What medications are used to treat pneumonia?
+    - How is pneumonia treated?
+    - Are there any specific medicines for pneumonia?
+
+- intent: ask_doctors_pneumonia
+  examples: |
+    - Which type of doctor treats pneumonia?
+    - Can you recommend a specialist for pneumonia?
+    - I need to see a doctor for pneumonia.
+
+- intent: ask_symptoms_common_cold
+  examples: |
+    - What are the symptoms of the common cold?
+    - How do I know if I have a cold?
+    - What are the common signs of a cold?
+
+- intent: ask_preventions_common_cold
+  examples: |
+    - How can I prevent the common cold?
+    - What are the ways to avoid a cold?
+    - Are there any preventive measures for a cold?
+
+- intent: ask_medication_common_cold
+  examples: |
+    - What medications are used to treat the common cold?
+    - How is a cold treated?
+    - Are there any specific medicines for a cold?
+
+- intent: ask_doctors_common_cold
+  examples: |
+    - Which type of doctor treats the common cold?
+    - Can you recommend a doctor for a cold?
+    - I need to see a specialist for a cold.
+
+- intent: ask_symptoms_kidney_stones
+  examples: |
+    - What are the symptoms of kidney stones?
+    - How do I know if I have kidney stones?
+    - What are the common signs of kidney stones?
+
+- intent: ask_preventions_kidney_stones
+  examples: |
+    - How can I prevent kidney stones?
+    - What are the ways to avoid kidney stones?
+    - Are there any preventive measures for kidney stones?
+
+- intent: ask_medication_kidney_stones
+  examples: |
+    - What medications are used to treat kidney stones?
+    - How are kidney stones treated?
+    - Are there any specific medicines for kidney stones?
+
+- intent: ask_doctors_kidney_stones
+  examples: |
+    - Which type of doctor treats kidney stones?
+    - Can you recommend a specialist for kidney stones?
+    - I need to see a doctor for kidney stones.
+
+- intent: book_appointment
+  examples: |
+    - I want to book an appointment.
+    - Can you help me with booking an appointment?
+    - How can I schedule an appointment?
+    - I need to see a doctor. Can you assist with that?
+
+- intent: inform_appointment_details
+  examples: |
+    - My details are: [appointment_details]
+    - Here are my details: [appointment_details]
+    - I would like to provide my appointment details: [appointment_details]
+
+- intent: inform_specialty
+  examples: |
+    - I'm looking for a [specialty] doctor.
+    - I need to see a [specialty] specialist.
+    - Can you recommend a [specialty] doctor?
+
+- intent: inform_date
+  examples: |
+    - The desired date is [date].
+    - I would like to schedule the appointment on [date].
+    - The date for the appointment is [date].
+
+- intent: inform_time
+  examples: |
+    - The desired time is [time].
+    - I would like to schedule the appointment at [time].
+    - The time for the appointment is [time].

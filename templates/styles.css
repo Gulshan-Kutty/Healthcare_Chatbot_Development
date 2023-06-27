@@ -1,0 +1,165 @@
+/* CSS for the navbar */
+.navbar {
+    background-color: #020202;
+    padding: 10px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #f3f0f0;
+}
+
+.navbar li a:hover {
+    background-color: #df1111;
+}
+
+/* CSS for section 1 */
+.section1 {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.section1 h2 {
+    text-align: center;
+}
+
+.section1 .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section1 .image-slides {
+    width: 300px;
+    height: 200px;
+    background-color: #ccc;
+    margin-right: 20px;
+}
+
+.section1 .description {
+    flex: 1;
+    text-align: justify;
+}
+
+/* CSS for section 2 */
+.section2 {
+    background-color: #e9ecef;
+    padding: 20px;
+}
+
+.section2 h2 {
+    text-align: center;
+}
+
+.section2 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section2 .doctor-profiles {
+    width: 200px;
+    background-color: #ccc;
+}
+
+.section2 .book-appointment {
+    width: 200px;
+    background-color: #ccc;
+}
+
+/* CSS for the chat icon */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* CSS for the chatbot container */
+.chat-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(400px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* CSS for the chat messages */
+.chat-messages {
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+/* CSS for the user and bot messages */
+.message {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.bot-message {
+    background-color: #e9ecef;
+    color: #000;
+    text-align: right;
+}
+
+/* CSS for the chat input field */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+version: "2.0"
+
+rules:
+- rule: Book Appointment
+  steps:
+  - intent: book_appointment
+  - action: utter_ask_specialty
+  - intent: inform_specialty
+  - action: utter_ask_date
+  - intent: inform_date
+  - action: utter_ask_time
+  - intent: inform_time
+  - action: utter_ask_appointment_details
+  - intent: inform_appointment_details
+  - action: action_confirm_appointment
+  - action: utter_confirm_appointment
+  - action: action_book_appointment
+  - action: utter_appointment_booked
+  - action: utter_ask_for_more
+
+- rule: Default fallback action
+  steps:
+  - action: utter_default
